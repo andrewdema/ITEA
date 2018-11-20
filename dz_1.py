@@ -1,4 +1,4 @@
-x = 2
+x = 2.2
 y = 3
-rez = x ** y
+rez = x + y
 print(rez)
