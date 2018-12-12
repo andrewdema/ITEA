@@ -16,12 +16,32 @@ def vvod_strok():
         else:
             sum_list = list + sum_list
     return sum_list
+
 full_list = vvod_strok()
-full_list.sort()
-for i in full_list:
-    n = full_list.count(i)
-    while n != 1:
-        full_list.remove(i)
-        n = full_list.count(i)
-    print(i)
+#print(full_list)
+
+
+def voc(full_l):
+    d = dict()
+    for x in full_l:
+        if x not in d:
+            d[x] = 1
+        else:
+            d[x] = d[x] + 1
+    return d
+vocabulary = voc(full_list)
+#print(vocabulary)
+
+vocabulary.items() #это структура такого вида dict_items([(1, 'one'), (2, 'two'), (3, 'three')])
+print('Статистика слов: ')
+for key, value in vocabulary.items():
+#print(key, '-', value)
+    print('|{:<5}|{:^1}|'.format(key,value))
+
+
+
+
+
+
+
 
