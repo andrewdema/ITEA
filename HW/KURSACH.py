@@ -15,9 +15,9 @@ from calc import *
 #         return a / b
 #     except ZeroDivisionError as e:
 #         return e
-
-def expon(a, b):
-    return a ** b
+#
+# def expon(a, b):
+#     return a ** b
 
 loop = False
 while loop == False:
